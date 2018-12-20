@@ -6,16 +6,30 @@
 //  Copyright (c) 2014 Austin Zheng. Released under the terms of the MIT license.
 //
 
+#if os(iOS)
 import UIKit
+#endif
+#if os(macOS)
+import AppKit
+#endif
 
 protocol AppearanceProviderProtocol: class {
+    #if os(iOS)
   func tileColor(_ value: Int) -> UIColor
   func numberColor(_ value: Int) -> UIColor
   func fontForNumbers() -> UIFont
+    #endif
+    
+    #if os(macOS)
+    func tileColor(_ value: Int) -> NSColor
+    func numberColor(_ value: Int) -> NSColor
+    func fontForNumbers() -> NSFont
+    #endif
 }
 
 class AppearanceProvider: AppearanceProviderProtocol {
 
+    #if os(iOS)
   // Provide a tile color for a given value
   func tileColor(_ value: Int) -> UIColor {
     switch value {
@@ -55,4 +69,52 @@ class AppearanceProvider: AppearanceProviderProtocol {
     }
     return UIFont.systemFont(ofSize: 20)
   }
+    
+    #endif
+    
+    #if os(macOS)
+    // Provide a tile color for a given value
+    func tileColor(_ value: Int) -> NSColor {
+        switch value {
+        case 2:
+            return NSColor.init(srgbRed: 238.0/255.0, green: 228.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+        case 4:
+            return NSColor.init(srgbRed: 237.0/255.0, green: 224.0/255.0, blue: 200.0/255.0, alpha: 1.0)
+        case 8:
+            return NSColor.init(srgbRed: 242.0/255.0, green: 177.0/255.0, blue: 121.0/255.0, alpha: 1.0)
+        case 16:
+            return NSColor.init(srgbRed: 245.0/255.0, green: 149.0/255.0, blue: 99.0/255.0, alpha: 1.0)
+        case 32:
+            return NSColor.init(srgbRed: 246.0/255.0, green: 124.0/255.0, blue: 95.0/255.0, alpha: 1.0)
+        case 64:
+            return NSColor.init(srgbRed: 246.0/255.0, green: 94.0/255.0, blue: 59.0/255.0, alpha: 1.0)
+        case 128, 256, 512, 1024, 2048:
+            return NSColor.init(srgbRed: 237.0/255.0, green: 207.0/255.0, blue: 114.0/255.0, alpha: 1.0)
+        default:
+            return NSColor.white
+        }
+    }
+    
+    // Provide a numeral color for a given value
+    func numberColor(_ value: Int) -> NSColor {
+        switch value {
+        case 2, 4:
+            return NSColor.init(srgbRed: 119.0/255.0, green: 110.0/255.0, blue: 101.0/255.0, alpha: 1.0)
+        default:
+            return NSColor.white
+        }
+    }
+    
+    // Provide the font to be used on the number tiles
+    func fontForNumbers() -> NSFont {
+        if let font = NSFont(name: "HelveticaNeue-Bold", size: 20) {
+            return font
+        }
+        return NSFont.systemFont(ofSize: 20)
+    }
+    
+    #endif
+
+    
+    
 }

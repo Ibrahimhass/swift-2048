@@ -20,6 +20,15 @@
 		1AEF46D01BAE736400119D81 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */; };
 		1AF8F0B619403AA400A7049E /* AccessoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B519403AA400A7049E /* AccessoryViews.swift */; };
 		1AF8F0B81941841000A7049E /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */; };
+		EDE6B74721CAC45100C5C199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6B74621CAC45100C5C199 /* AppDelegate.swift */; };
+		EDE6B74921CAC45100C5C199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6B74821CAC45100C5C199 /* ViewController.swift */; };
+		EDE6B74B21CAC45300C5C199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE6B74A21CAC45300C5C199 /* Assets.xcassets */; };
+		EDE6B74E21CAC45300C5C199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE6B74C21CAC45300C5C199 /* Main.storyboard */; };
+		EDE6B75A21CAC45300C5C199 /* swift_2048_macAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6B75921CAC45300C5C199 /* swift_2048_macAppTests.swift */; };
+		EDE6B76521CAC45300C5C199 /* swift_2048_macAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6B76421CAC45300C5C199 /* swift_2048_macAppUITests.swift */; };
+		EDE6B77021CAC61C00C5C199 /* AppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8BEF1193EF1C7007592BA /* AppearanceProvider.swift */; };
+		EDE6B77121CACA3000C5C199 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8BEF5193EF4B6007592BA /* TileView.swift */; };
+		EDE6B77221CACE3D00C5C199 /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8BEEF193EEE24007592BA /* GameboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1AC563DC193DCE6000402286;
 			remoteInfo = "swift-2048";
+		};
+		EDE6B75621CAC45300C5C199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC563D5193DCE6000402286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDE6B74321CAC45100C5C199;
+			remoteInfo = "swift-2048-macApp";
+		};
+		EDE6B76121CAC45300C5C199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC563D5193DCE6000402286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDE6B74321CAC45100C5C199;
+			remoteInfo = "swift-2048-macApp";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,6 +80,19 @@
 		1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1AF8F0B519403AA400A7049E /* AccessoryViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessoryViews.swift; path = Views/AccessoryViews.swift; sourceTree = "<group>"; };
 		1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuxiliaryModels.swift; path = Models/AuxiliaryModels.swift; sourceTree = "<group>"; };
+		EDE6B74421CAC45100C5C199 /* swift-2048-macApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-2048-macApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE6B74621CAC45100C5C199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDE6B74821CAC45100C5C199 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDE6B74A21CAC45300C5C199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDE6B74D21CAC45300C5C199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDE6B74F21CAC45300C5C199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE6B75021CAC45300C5C199 /* swift_2048_macApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swift_2048_macApp.entitlements; sourceTree = "<group>"; };
+		EDE6B75521CAC45300C5C199 /* swift-2048-macAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-2048-macAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE6B75921CAC45300C5C199 /* swift_2048_macAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_2048_macAppTests.swift; sourceTree = "<group>"; };
+		EDE6B75B21CAC45300C5C199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE6B76021CAC45300C5C199 /* swift-2048-macAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-2048-macAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE6B76421CAC45300C5C199 /* swift_2048_macAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_2048_macAppUITests.swift; sourceTree = "<group>"; };
+		EDE6B76621CAC45300C5C199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +110,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE6B74121CAC45100C5C199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE6B75221CAC45300C5C199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE6B75D21CAC45300C5C199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +139,9 @@
 			children = (
 				1AC563DF193DCE6000402286 /* swift-2048 */,
 				1AC563F2193DCE6000402286 /* swift-2048Tests */,
+				EDE6B74521CAC45100C5C199 /* swift-2048-macApp */,
+				EDE6B75821CAC45300C5C199 /* swift-2048-macAppTests */,
+				EDE6B76321CAC45300C5C199 /* swift-2048-macAppUITests */,
 				1AC563DE193DCE6000402286 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +151,9 @@
 			children = (
 				1AC563DD193DCE6000402286 /* swift-2048.app */,
 				1AC563EF193DCE6000402286 /* swift-2048Tests.xctest */,
+				EDE6B74421CAC45100C5C199 /* swift-2048-macApp.app */,
+				EDE6B75521CAC45300C5C199 /* swift-2048-macAppTests.xctest */,
+				EDE6B76021CAC45300C5C199 /* swift-2048-macAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +219,37 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		EDE6B74521CAC45100C5C199 /* swift-2048-macApp */ = {
+			isa = PBXGroup;
+			children = (
+				EDE6B74621CAC45100C5C199 /* AppDelegate.swift */,
+				EDE6B74821CAC45100C5C199 /* ViewController.swift */,
+				EDE6B74A21CAC45300C5C199 /* Assets.xcassets */,
+				EDE6B74C21CAC45300C5C199 /* Main.storyboard */,
+				EDE6B74F21CAC45300C5C199 /* Info.plist */,
+				EDE6B75021CAC45300C5C199 /* swift_2048_macApp.entitlements */,
+			);
+			path = "swift-2048-macApp";
+			sourceTree = "<group>";
+		};
+		EDE6B75821CAC45300C5C199 /* swift-2048-macAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDE6B75921CAC45300C5C199 /* swift_2048_macAppTests.swift */,
+				EDE6B75B21CAC45300C5C199 /* Info.plist */,
+			);
+			path = "swift-2048-macAppTests";
+			sourceTree = "<group>";
+		};
+		EDE6B76321CAC45300C5C199 /* swift-2048-macAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDE6B76421CAC45300C5C199 /* swift_2048_macAppUITests.swift */,
+				EDE6B76621CAC45300C5C199 /* Info.plist */,
+			);
+			path = "swift-2048-macAppUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,13 +289,66 @@
 			productReference = 1AC563EF193DCE6000402286 /* swift-2048Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EDE6B74321CAC45100C5C199 /* swift-2048-macApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE6B76721CAC45300C5C199 /* Build configuration list for PBXNativeTarget "swift-2048-macApp" */;
+			buildPhases = (
+				EDE6B74021CAC45100C5C199 /* Sources */,
+				EDE6B74121CAC45100C5C199 /* Frameworks */,
+				EDE6B74221CAC45100C5C199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-2048-macApp";
+			productName = "swift-2048-macApp";
+			productReference = EDE6B74421CAC45100C5C199 /* swift-2048-macApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDE6B75421CAC45300C5C199 /* swift-2048-macAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE6B76A21CAC45300C5C199 /* Build configuration list for PBXNativeTarget "swift-2048-macAppTests" */;
+			buildPhases = (
+				EDE6B75121CAC45300C5C199 /* Sources */,
+				EDE6B75221CAC45300C5C199 /* Frameworks */,
+				EDE6B75321CAC45300C5C199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDE6B75721CAC45300C5C199 /* PBXTargetDependency */,
+			);
+			name = "swift-2048-macAppTests";
+			productName = "swift-2048-macAppTests";
+			productReference = EDE6B75521CAC45300C5C199 /* swift-2048-macAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDE6B75F21CAC45300C5C199 /* swift-2048-macAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE6B76D21CAC45300C5C199 /* Build configuration list for PBXNativeTarget "swift-2048-macAppUITests" */;
+			buildPhases = (
+				EDE6B75C21CAC45300C5C199 /* Sources */,
+				EDE6B75D21CAC45300C5C199 /* Frameworks */,
+				EDE6B75E21CAC45300C5C199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDE6B76221CAC45300C5C199 /* PBXTargetDependency */,
+			);
+			name = "swift-2048-macAppUITests";
+			productName = "swift-2048-macAppUITests";
+			productReference = EDE6B76021CAC45300C5C199 /* swift-2048-macAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1AC563D5193DCE6000402286 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Austin Zheng";
 				TargetAttributes = {
@@ -213,6 +360,20 @@
 						CreatedOnToolsVersion = 6.0;
 						LastSwiftMigration = 0900;
 						TestTargetID = 1AC563DC193DCE6000402286;
+					};
+					EDE6B74321CAC45100C5C199 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
+					EDE6B75421CAC45300C5C199 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDE6B74321CAC45100C5C199;
+					};
+					EDE6B75F21CAC45300C5C199 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDE6B74321CAC45100C5C199;
 					};
 				};
 			};
@@ -231,6 +392,9 @@
 			targets = (
 				1AC563DC193DCE6000402286 /* swift-2048 */,
 				1AC563EE193DCE6000402286 /* swift-2048Tests */,
+				EDE6B74321CAC45100C5C199 /* swift-2048-macApp */,
+				EDE6B75421CAC45300C5C199 /* swift-2048-macAppTests */,
+				EDE6B75F21CAC45300C5C199 /* swift-2048-macAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +411,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1AC563ED193DCE6000402286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE6B74221CAC45100C5C199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE6B74B21CAC45300C5C199 /* Assets.xcassets in Resources */,
+				EDE6B74E21CAC45300C5C199 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE6B75321CAC45300C5C199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE6B75E21CAC45300C5C199 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +467,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE6B74021CAC45100C5C199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE6B74921CAC45100C5C199 /* ViewController.swift in Sources */,
+				EDE6B74721CAC45100C5C199 /* AppDelegate.swift in Sources */,
+				EDE6B77221CACE3D00C5C199 /* GameboardView.swift in Sources */,
+				EDE6B77121CACA3000C5C199 /* TileView.swift in Sources */,
+				EDE6B77021CAC61C00C5C199 /* AppearanceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE6B75121CAC45300C5C199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE6B75A21CAC45300C5C199 /* swift_2048_macAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE6B75C21CAC45300C5C199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE6B76521CAC45300C5C199 /* swift_2048_macAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +508,16 @@
 			target = 1AC563DC193DCE6000402286 /* swift-2048 */;
 			targetProxy = 1AE8BEF7193F1090007592BA /* PBXContainerItemProxy */;
 		};
+		EDE6B75721CAC45300C5C199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDE6B74321CAC45100C5C199 /* swift-2048-macApp */;
+			targetProxy = EDE6B75621CAC45300C5C199 /* PBXContainerItemProxy */;
+		};
+		EDE6B76221CAC45300C5C199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDE6B74321CAC45100C5C199 /* swift-2048-macApp */;
+			targetProxy = EDE6B76121CAC45300C5C199 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -300,6 +525,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				1AC563E7193DCE6000402286 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE6B74C21CAC45300C5C199 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE6B74D21CAC45300C5C199 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -470,6 +703,194 @@
 			};
 			name = Release;
 		};
+		EDE6B76821CAC45300C5C199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "swift-2048-macApp/swift_2048_macApp.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "swift-2048-macApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "None.swift-2048-macApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		EDE6B76921CAC45300C5C199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "swift-2048-macApp/swift_2048_macApp.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "swift-2048-macApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "None.swift-2048-macApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		EDE6B76B21CAC45300C5C199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "swift-2048-macAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "None.swift-2048-macAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-2048-macApp.app/Contents/MacOS/swift-2048-macApp";
+			};
+			name = Debug;
+		};
+		EDE6B76C21CAC45300C5C199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "swift-2048-macAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "None.swift-2048-macAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-2048-macApp.app/Contents/MacOS/swift-2048-macApp";
+			};
+			name = Release;
+		};
+		EDE6B76E21CAC45300C5C199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "swift-2048-macAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "None.swift-2048-macAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "swift-2048-macApp";
+			};
+			name = Debug;
+		};
+		EDE6B76F21CAC45300C5C199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "swift-2048-macAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "None.swift-2048-macAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "swift-2048-macApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +917,33 @@
 			buildConfigurations = (
 				1AC563FD193DCE6000402286 /* Debug */,
 				1AC563FE193DCE6000402286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE6B76721CAC45300C5C199 /* Build configuration list for PBXNativeTarget "swift-2048-macApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE6B76821CAC45300C5C199 /* Debug */,
+				EDE6B76921CAC45300C5C199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE6B76A21CAC45300C5C199 /* Build configuration list for PBXNativeTarget "swift-2048-macAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE6B76B21CAC45300C5C199 /* Debug */,
+				EDE6B76C21CAC45300C5C199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE6B76D21CAC45300C5C199 /* Build configuration list for PBXNativeTarget "swift-2048-macAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE6B76E21CAC45300C5C199 /* Debug */,
+				EDE6B76F21CAC45300C5C199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
