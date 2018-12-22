@@ -20,6 +20,9 @@
 		1AEF46D01BAE736400119D81 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */; };
 		1AF8F0B619403AA400A7049E /* AccessoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B519403AA400A7049E /* AccessoryViews.swift */; };
 		1AF8F0B81941841000A7049E /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */; };
+		ED611E0421CECC290029202B /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE339B1193DCF110081FFA4 /* GameModel.swift */; };
+		ED611E0521CECC640029202B /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */; };
+		ED611E0621CECCD40029202B /* AccessoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B519403AA400A7049E /* AccessoryViews.swift */; };
 		EDE6B74721CAC45100C5C199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6B74621CAC45100C5C199 /* AppDelegate.swift */; };
 		EDE6B74921CAC45100C5C199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6B74821CAC45100C5C199 /* ViewController.swift */; };
 		EDE6B74B21CAC45300C5C199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE6B74A21CAC45300C5C199 /* Assets.xcassets */; };
@@ -28,7 +31,6 @@
 		EDE6B76521CAC45300C5C199 /* swift_2048_macAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6B76421CAC45300C5C199 /* swift_2048_macAppUITests.swift */; };
 		EDE6B77021CAC61C00C5C199 /* AppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8BEF1193EF1C7007592BA /* AppearanceProvider.swift */; };
 		EDE6B77121CACA3000C5C199 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8BEF5193EF4B6007592BA /* TileView.swift */; };
-		EDE6B77221CACE3D00C5C199 /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8BEEF193EEE24007592BA /* GameboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -473,9 +475,11 @@
 			files = (
 				EDE6B74921CAC45100C5C199 /* ViewController.swift in Sources */,
 				EDE6B74721CAC45100C5C199 /* AppDelegate.swift in Sources */,
-				EDE6B77221CACE3D00C5C199 /* GameboardView.swift in Sources */,
 				EDE6B77121CACA3000C5C199 /* TileView.swift in Sources */,
 				EDE6B77021CAC61C00C5C199 /* AppearanceProvider.swift in Sources */,
+				ED611E0521CECC640029202B /* AuxiliaryModels.swift in Sources */,
+				ED611E0621CECCD40029202B /* AccessoryViews.swift in Sources */,
+				ED611E0421CECC290029202B /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

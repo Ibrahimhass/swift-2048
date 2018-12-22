@@ -6,31 +6,35 @@
 //  Copyright (c) 2014 Austin Zheng. Released under the terms of the MIT license.
 //
 
+#if os(OSX)
+import AppKit
+#else
 import UIKit
+#endif
 
 protocol ScoreViewProtocol {
   func scoreChanged(to s: Int)
 }
 
 /// A simple view that displays the player's score.
-class ScoreView : UIView, ScoreViewProtocol {
+class ScoreView : View, ScoreViewProtocol {
   var score : Int = 0 {
     didSet {
-      label.text = "SCORE: \(score)"
+      label.set(text: "SCORE: \(score)")
     }
   }
 
   let defaultFrame = CGRect(x: 0, y: 0, width: 140, height: 40)
-  var label: UILabel
+  var label: Label
 
-  init(backgroundColor bgcolor: UIColor, textColor tcolor: UIColor, font: UIFont, radius r: CGFloat) {
-    label = UILabel(frame: defaultFrame)
-    label.textAlignment = NSTextAlignment.center
+  init(backgroundColor bgcolor: Color, textColor tcolor: Color, font: Font, radius r: CGFloat) {
+    label = Label(frame: defaultFrame)
+    label.setText(alignment: .center)
     super.init(frame: defaultFrame)
-    backgroundColor = bgcolor
+    set(backgroundColor: bgcolor)
     label.textColor = tcolor
     label.font = font
-    layer.cornerRadius = r
+    set(cornerRadius: r)
     self.addSubview(label)
   }
 

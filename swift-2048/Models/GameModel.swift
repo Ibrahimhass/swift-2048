@@ -6,7 +6,11 @@
 //  Copyright (c) 2014 Austin Zheng. Released under the terms of the MIT license.
 //
 
+#if os(OSX)
+import AppKit
+#else
 import UIKit
+#endif
 
 /// A protocol that establishes a way for the game model to communicate with its parent view controller.
 protocol GameModelProtocol : class {

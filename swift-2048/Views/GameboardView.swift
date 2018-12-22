@@ -6,9 +6,13 @@
 //  Copyright (c) 2014 Austin Zheng. Released under the terms of the MIT license.
 //
 
+#if os(iOS)
 import UIKit
+#else
+import AppKit
+#endif
 
-class GameboardView : UIView {
+class GameboardView : View {
   var dimension: Int
   var tileWidth: CGFloat
   var tilePadding: CGFloat
@@ -29,7 +33,7 @@ class GameboardView : UIView {
 
   let perSquareSlideDuration: TimeInterval = 0.08
 
-  init(dimension d: Int, tileWidth width: CGFloat, tilePadding padding: CGFloat, cornerRadius radius: CGFloat, backgroundColor: UIColor, foregroundColor: UIColor) {
+  init(dimension d: Int, tileWidth width: CGFloat, tilePadding padding: CGFloat, cornerRadius radius: CGFloat, backgroundColor: Color, foregroundColor: Color) {
     assert(d > 0)
     dimension = d
     tileWidth = width
@@ -38,7 +42,11 @@ class GameboardView : UIView {
     tiles = Dictionary()
     let sideLength = padding + CGFloat(dimension)*(width + padding)
     super.init(frame: CGRect(x: 0, y: 0, width: sideLength, height: sideLength))
+    #if os(OSX)
+    layer?.cornerRadius = radius
+    #else
     layer.cornerRadius = radius
+    #endif
     setupBackground(backgroundColor: backgroundColor, tileColor: foregroundColor)
   }
 
@@ -59,8 +67,12 @@ class GameboardView : UIView {
     return (x >= 0 && x < dimension && y >= 0 && y < dimension)
   }
 
-  func setupBackground(backgroundColor bgColor: UIColor, tileColor: UIColor) {
+  func setupBackground(backgroundColor bgColor: Color, tileColor: Color) {
+    #if os(OSX)
+    layer?.backgroundColor = bgColor.cgColor
+    #else
     backgroundColor = bgColor
+    #endif
     var xCursor = tilePadding
     var yCursor: CGFloat
     let bgRadius = (cornerRadius >= 2) ? cornerRadius - 2 : 0
@@ -68,9 +80,14 @@ class GameboardView : UIView {
       yCursor = tilePadding
       for _ in 0..<dimension {
         // Draw each tile
-        let background = UIView(frame: CGRect(x: xCursor, y: yCursor, width: tileWidth, height: tileWidth))
+        let background = View(frame: CGRect(x: xCursor, y: yCursor, width: tileWidth, height: tileWidth))
+        #if os(OSX)
+        background.layer?.cornerRadius = bgRadius
+        background.layer?.backgroundColor = tileColor.cgColor
+        #else
         background.layer.cornerRadius = bgRadius
         background.backgroundColor = tileColor
+        #endif
         addSubview(background)
         yCursor += tilePadding + tileWidth
       }
@@ -86,12 +103,16 @@ class GameboardView : UIView {
     let y = tilePadding + CGFloat(row)*(tileWidth + tilePadding)
     let r = (cornerRadius >= 2) ? cornerRadius - 2 : 0
     let tile = TileView(position: CGPoint(x: x, y: y), width: tileWidth, value: value, radius: r, delegate: provider)
+    #if os(OSX)
+    tile.layer?.setAffineTransform(CGAffineTransform(scaleX: tilePopStartScale, y: tilePopStartScale))
+    #else
     tile.layer.setAffineTransform(CGAffineTransform(scaleX: tilePopStartScale, y: tilePopStartScale))
-
+    #endif
     addSubview(tile)
     bringSubviewToFront(tile)
     tiles[IndexPath(row: row, section: col)] = tile
 
+    
     // Add to board
     UIView.animate(withDuration: tileExpandTime, delay: tilePopDelay, options: UIView.AnimationOptions(),
       animations: {
@@ -132,9 +153,9 @@ class GameboardView : UIView {
 
     // Animate
     let shouldPop = endTile != nil
-    UIView.animate(withDuration: perSquareSlideDuration,
+    View.animate(withDuration: perSquareSlideDuration,
       delay: 0.0,
-      options: UIView.AnimationOptions.beginFromCurrentState,
+      options: View.AnimationOptions.beginFromCurrentState,
       animations: {
         // Slide tile
         tile.frame = finalFrame
@@ -155,7 +176,7 @@ class GameboardView : UIView {
             // Contract tile to original size
             UIView.animate(withDuration: self.tileMergeContractTime, animations: {
               tile.layer.setAffineTransform(CGAffineTransform.identity)
-            }) 
+            })
         })
     })
   }
@@ -167,7 +188,7 @@ class GameboardView : UIView {
     let (fromRowA, fromColA) = from.0
     let (fromRowB, fromColB) = from.1
     let (toRow, toCol) = to
-    let fromKeyA = IndexPath(row: fromRowA, section: fromColA)
+    let fromKeyA = IndexPath(item: fromRowA, section: fromColA)
     let fromKeyB = IndexPath(row: fromRowB, section: fromColB)
     let toKey = IndexPath(row: toRow, section: toCol)
 
@@ -190,9 +211,9 @@ class GameboardView : UIView {
     tiles.removeValue(forKey: fromKeyB)
     tiles[toKey] = tileA
 
-    UIView.animate(withDuration: perSquareSlideDuration,
+    View.animate(withDuration: perSquareSlideDuration,
       delay: 0.0,
-      options: UIView.AnimationOptions.beginFromCurrentState,
+      options: View.AnimationOptions.beginFromCurrentState,
       animations: {
         // Slide tiles
         tileA.frame = finalFrame
@@ -214,7 +235,7 @@ class GameboardView : UIView {
             // Contract tile to original size
             UIView.animate(withDuration: self.tileMergeContractTime, animations: {
               tileA.layer.setAffineTransform(CGAffineTransform.identity)
-            }) 
+            })
         })
     })
   }

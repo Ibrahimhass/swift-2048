@@ -14,17 +14,9 @@ import AppKit
 #endif
 
 protocol AppearanceProviderProtocol: class {
-    #if os(iOS)
-  func tileColor(_ value: Int) -> UIColor
-  func numberColor(_ value: Int) -> UIColor
-  func fontForNumbers() -> UIFont
-    #endif
-    
-    #if os(macOS)
-    func tileColor(_ value: Int) -> NSColor
-    func numberColor(_ value: Int) -> NSColor
-    func fontForNumbers() -> NSFont
-    #endif
+  func tileColor(_ value: Int) -> Color
+  func numberColor(_ value: Int) -> Color
+  func fontForNumbers() -> Font
 }
 
 class AppearanceProvider: AppearanceProviderProtocol {
